@@ -52,7 +52,7 @@ def register():
     phonenumber = data.get('phonenumber')
     email = data.get('email')
     age = data.get('age')
-    gender = data.get('gender')
+    gender = data.get('gender' )
 
     if not name or not email:
         return jsonify({"error": "Name and Email are required"}), 400
